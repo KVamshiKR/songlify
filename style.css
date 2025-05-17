@@ -77,6 +77,14 @@ body{
 padding: 10px;
 }
 
+.nav{
+    display: flex;
+}
+
+.hamburger{
+    display: none;
+}
+
 .buttons button{
     border: solid #353434 1px;
     background-color: #353434;
@@ -265,11 +273,25 @@ align-items: center;
 
 @media(max-width: 1400px){
     .left{
-        
+        background-color: red;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 233px;
     }
 
-
-    .nav svg{
-        visibility: hidden;
+    .right{
+        width: 100%;
     }
+
+    .hamburger{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .playbar{
+        width: 95%;
+    }
+
 }
