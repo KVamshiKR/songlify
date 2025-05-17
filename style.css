@@ -271,14 +271,18 @@ align-items: center;
     
 }
 
+.close{
+    display: none;
+}
+
 @media(max-width: 1400px){
     .left{
-        background-color: red;
+        background-color: black;
         position: absolute;
-        left: -100%;
+        left: -110%;
         transition: all .3s;
         z-index: 1;
-        width: 233px;
+        width: 100dvw;
     }
 
     .right{
@@ -292,6 +296,13 @@ align-items: center;
 
     .playbar{
         width: 95%;
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 35px;
     }
 
 }
